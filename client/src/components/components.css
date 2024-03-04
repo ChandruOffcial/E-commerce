@@ -1,0 +1,8 @@
+.dropdown::after {
+  content: url("../../public/chevron-down-solid.svg");
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 15px;
+}
