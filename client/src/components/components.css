@@ -6,3 +6,37 @@
   right: 0px;
   width: 15px;
 }
+.footer__Accordion {
+  height: 36px !important;
+}
+
+.collapse-title,
+:where(.collapse > input[type="checkbox"]),
+:where(.collapse > input[type="radio"]) {
+  min-height: 2rem !important;
+}
+
+.ec-slide-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 5px;
+  width: 50px;
+  margin: 0 auto;
+  background: #3474d4;
+  left: 4px;
+  right: auto;
+}
+
+.fade-in {
+  opacity: 0; /* Make the element transparent initially */
+  animation: fadeInAnimation 1s ease-in forwards; /* Apply animation */
+}
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0; /* Start the animation with opacity 0 */
+  }
+  to {
+    opacity: 1; /* End the animation with opacity 1 */
+  }
+}

@@ -33,6 +33,12 @@ const Navbar = () => {
                                 <p className="uppercase font-bold text-3xl" onClick={toggleDrawer}>×</p>
                             </div>
                             <hr className="" />
+                            <p className="mt-3 font-semibold uppercase cursor-pointer hover:underline underline-offset-2 duration-200">Home</p>
+                            <p className="mt-3 font-semibold uppercase cursor-pointer hover:underline underline-offset-2 duration-200">About</p>
+                            <p className="mt-3 font-semibold uppercase cursor-pointer hover:underline underline-offset-2 duration-200">Products</p>
+                            <p className="mt-3 font-semibold uppercase cursor-pointer hover:underline underline-offset-2 duration-200">Contact</p>
+                            <p className="mt-3 font-semibold uppercase cursor-pointer hover:underline underline-offset-2 duration-200">Offers</p>
+                            <p className="mt-3 font-semibold uppercase cursor-pointer hover:underline underline-offset-2 duration-200">Blog</p>
 
                         </ul>
                     </div>
@@ -88,7 +94,7 @@ const Navbar = () => {
                     <img src="logo/logo.png" alt="logo" className="h-6 md:h-9" />
                 </div>
                 {/* Search Box */}
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center pb-5">
                     <form className="mx-auto relative">
                         <input
                             className="block w-[300px] md:w-[380px] min-h-11 h-11 px-4 py-3 text-base font-normal leading-normal text-gray-700 border border-solid border-blue-500 rounded-md focus:border-blue-500 focus:outline-none mx-3"
@@ -100,6 +106,7 @@ const Navbar = () => {
                 </div>
             </div>
 
+            {/* Laptop View */}
             <div className="hidden lg:flex">
                 <div className="container  mx-auto">
                     {/* Social Icon Section */}
@@ -185,13 +192,13 @@ const Navbar = () => {
                     <hr className="my-4" />
 
                     {/* Mega Menu */}
-                    <div className="container-fluid flex items-center justify-between">
+                    <div className="container-fluid flex items-center justify-between pb-6">
                         <div>
                             <GrAppsRounded className="h-6 w-6 md:h-7 md:w-7" />
                         </div>
 
                         <div>
-                            <ul className="flex space-x-6">
+                            <ul className="flex space-x-14">
                                 <li className="font-semibold uppercase cursor-pointer hover:underline underline-offset-2 duration-200">Home</li>
                                 <li className="font-semibold uppercase cursor-pointer hover:underline underline-offset-2 duration-200">About</li>
                                 <li className="font-semibold uppercase cursor-pointer hover:underline underline-offset-2 duration-200">Products</li>
