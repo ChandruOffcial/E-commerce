@@ -1,12 +1,14 @@
 import Banner from "../../components/Banner/Banner"
-import Card from "../../components/Card/Card"
+// import Card from "../../components/Card/Card"
+import TopCollectio from "../../components/collection/TopCollectio"
 
 
 const Home = () => {
     return (
         <>
             <Banner />
-            <Card />
+            <TopCollectio />
+
         </>
     )
 }

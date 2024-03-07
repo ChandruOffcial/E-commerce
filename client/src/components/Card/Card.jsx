@@ -1,12 +1,40 @@
 import { useState } from "react";
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
-useState
+import { useEffect } from 'react';
+import { HiOutlineShoppingBag } from "react-icons/hi2";
+import { IoMdHeartEmpty } from "react-icons/io";
+import { IoEyeOutline } from "react-icons/io5";
+
 
 const Card = () => {
 
+    useEffect(() => {
+        const shadowAppend = () => {
+            // For Color Shadow
+            const allLiElements = document.querySelectorAll(".shadow_effect");
+            allLiElements.forEach((li, i) => {
+                if (i === 0) {
+                    li.style.boxShadow = '0px 0px 0px 2px rgba(0,0,0,0.3)';
+                } else {
+                    li.style.boxShadow = 'none';
+                }
+            });
+
+            const allLSize = document.querySelectorAll('.size_class');
+            allLSize.forEach((li, i) => {
+                if (i === 0) {
+                    li.style.backgroundColor = '#94949b';
+                } else {
+                    li.style.backgroundColor = "#f4f4f5"
+                }
+            });
 
 
+        };
+
+        shadowAppend();
+    }, []);
 
     const data = {
         id: "65756467",
@@ -30,12 +58,12 @@ const Card = () => {
                     },
                     {
                         size: "S",
-                        oldPrice: 78.98,
+                        oldPrice: 79.98,
                         newPrice: 34.78,
                     },
                     {
                         size: "M",
-                        oldPrice: 78.98,
+                        oldPrice: 80.98,
                         newPrice: 34.78,
                     }
                 ],
@@ -52,17 +80,17 @@ const Card = () => {
                 sizes: [
                     {
                         size: "S",
-                        oldPrice: 89.99,
+                        oldPrice: 34.99,
                         newPrice: 49.99,
                     },
                     {
                         size: "M",
-                        oldPrice: 89.99,
+                        oldPrice: 76.99,
                         newPrice: 49.99,
                     },
                     {
                         size: "L",
-                        oldPrice: 89.99,
+                        oldPrice: 12.99,
                         newPrice: 49.99,
                     },
                 ],
@@ -84,39 +112,85 @@ const Card = () => {
                     },
                     {
                         size: "S",
-                        oldPrice: 99.95,
+                        oldPrice: 45.95,
                         newPrice: 59.95,
                     },
                     {
                         size: "M",
-                        oldPrice: 99.95,
+                        oldPrice: 78.95,
                         newPrice: 59.95,
                     },
                 ],
             },
         ],
     };
-    const handleDeatils = () => {
-        console.log("clicked")
+
+    const [defaultDetails, setDefaultDetails] = useState(data.productdetails[0])
+    const [oldPrices, setOldPrices] = useState(defaultDetails.sizes[0]);
+    const [newPrices, setNewPrices] = useState(defaultDetails.sizes[0]);
+
+
+    // For Color 
+    const handleDeatils = (index, event) => {
+        const bgChange = event.target;
+        setDefaultDetails(data.productdetails[index])
+        setOldPrices(defaultDetails.sizes[0])
+        setNewPrices(defaultDetails.sizes[0])
+        bgChange.style.boxShadow = '0px 0px 0px 2px rgba(0,0,0,0.3)';
+        const allLiElements = document.querySelectorAll('.shadow_effect');
+        allLiElements.forEach((li, i) => {
+            if (i !== index) {
+                li.style.boxShadow = '';
+            }
+        });
     }
-    const defaultDetails = data.productdetails[0];
+
+    // For Sixe
+    const handlePrice = (index, event) => {
+        setNewPrices(defaultDetails.sizes[index])
+        setOldPrices(defaultDetails.sizes[index])
+        const bgChange = event.target;
+        bgChange.style.backgroundColor = '#94949b';
+        const allLiElements = document.querySelectorAll('.size_class');
+        allLiElements.forEach((li, i) => {
+            if (i !== index) {
+                li.style.backgroundColor = '';
+            }
+        });
+
+    }
+
+
     return (
         <>
-            <div className="card w-80 bg-base-100 shadow-xl border p-3">
-                <div className="flex justify-center items-center"><img src="/logo/card.jpg" alt="Shoes" className="h-80 w-72 rounded-none" /></div>
+            <div className="card md:w-80 w-72 bg-base-100 shadow-xl border p-3 relative group">
+                <div className="flex  items-center overflow-hidden cursor-pointer"><img src="/logo/card.jpg" alt="Shoes" className="h-80 w-full rounded-none group-hover:scale-110 duration-300 object-cover" /></div>
+                <span className="absolute top-7 left-4 text-xs font-semibold leading-6 px-2 text-center uppercase text-white flex items-center justify-center bg-pink-600 rounded-r-lg">20%</span>
+
+                <div className="absolute bottom-44 right-7 flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100 duration-300 translate-y-9 group-hover:translate-y-0">
+                    <div className="h-8 w-7 bg-white flex justify-center items-center z-10 rounded-t-lg cursor-pointer">
+                        <HiOutlineShoppingBag className="h-6 w-6 " />
+                    </div>
+                    <div className="h-8 w-8 bg-white flex justify-center items-center z-10 cursor-pointer">
+                        <IoMdHeartEmpty className="h-6 w-6 " />
+                    </div>
+                    <div className="h-8 w-8 bg-white flex justify-center items-center z-10 cursor-pointer rounded-b-xl">
+                        <IoEyeOutline className="h-5 w-5" />
+                    </div>
+                </div>
                 <div className="">
-                    <h2 className=" mt-2 text-base font-sans tracking-wider mb-2">{data.productName}</h2>
+                    <h2 className=" mt-2 text-base font-sans tracking-wider mb-1 cursor-pointer">{data.productName}</h2>
 
                     <Stack spacing={1}>
-                        <Rating name="half-rating-read" defaultValue={data.rating} precision={0.1} readOnly />
+                        <Rating name="half-rating-read" className="mb-1" defaultValue={data.rating} precision={0.1} readOnly />
                     </Stack>
 
-                    <p className="mb-2"><span className="mr-1"><del>${data.productdetails[0].sizes[0].oldPrice}</del></span> <span className="font-semibold">${data.productdetails[0].sizes[0].newPrice}</span></p>
+                    <p className="mb-2"><span className="mr-1"><del>${oldPrices.oldPrice}</del></span> <span className="font-semibold">${newPrices.newPrice}</span></p>
                     <div className="flex justify-between items-center mb-1 px-1">
                         <ul className="flex justify-center items-center space-x-1">
                             {
                                 data.productdetails.map((m_product, index) => (
-                                    <li key={index} className="h-6 w-6 rounded-full p-2 border border-white  hover:shadow-md duration-200 cursor-pointer" style={{ backgroundColor: m_product.colorCode }} onClick={handleDeatils}></li>
+                                    <li key={index} className="h-6 w-6 rounded-full p-2 border  cursor-pointer shadow_effect" style={{ backgroundColor: m_product.colorCode }} onMouseOver={(event) => handleDeatils(index, event)}></li>
                                 ))
                             }
 
@@ -124,10 +198,11 @@ const Card = () => {
                         <ul className="flex justify-center items-center space-x-1">
                             {
                                 defaultDetails.sizes.map((sizeObj, index) => (
-                                    <li key={index} className="uppercase font-semibold h-5 w-6 bg-zinc-300 text-black text-[12px] flex justify-center items-center p-1.5 cursor-pointer">{sizeObj.size}</li>
+                                    <li key={index} className="uppercase font-semibold h-5 w-6 bg-zinc-100 text-black text-[12px] flex justify-center items-center p-1.5 cursor-pointer size_class" onMouseOver={(event) => handlePrice(index, event)}>{sizeObj.size}</li>
                                 ))
                             }
                         </ul>
+
 
                     </div>
                 </div>
