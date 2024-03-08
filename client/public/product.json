@@ -1,0 +1,427 @@
+[
+  {
+    "id": "uttlabmhy",
+    "productName": "Product 1",
+    "rating": 2,
+    "productdetails": [
+      {
+        "color": "#4BF740",
+        "colorCode": "#4BF740",
+        "imgURL": [
+          "/logo/765x850-1.jpg",
+          "/image/image2.png",
+          "/image/image3.png"
+        ],
+        "description": "Description for Product 1",
+        "quantity": 36,
+        "detail": "Detail for Product 1",
+        "moreInformation": "More Information for Product 1",
+        "offer": 49,
+        "sizes": [
+          {
+            "size": "XS",
+            "oldPrice": 88,
+            "newPrice": 47
+          },
+          {
+            "size": "S",
+            "oldPrice": 54,
+            "newPrice": 71
+          },
+          {
+            "size": "M",
+            "oldPrice": 69,
+            "newPrice": 65
+          }
+        ]
+      },
+      {
+        "color": "#8B87B4",
+        "colorCode": "#8B87B4",
+        "imgURL": [
+          "/logo/765x850-2.jpg",
+          "/image/image2.png",
+          "/image/image3.png"
+        ],
+        "description": "Description for Product 1",
+        "quantity": 25,
+        "detail": "Detail for Product 1",
+        "moreInformation": "More Information for Product 1",
+        "offer": 27,
+        "sizes": [
+          {
+            "size": "XS",
+            "oldPrice": 62,
+            "newPrice": 98
+          },
+          {
+            "size": "S",
+            "oldPrice": 90,
+            "newPrice": 10
+          },
+          {
+            "size": "M",
+            "oldPrice": 35,
+            "newPrice": 70
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3wnofypft",
+    "productName": "Product 2",
+    "rating": 2,
+    "productdetails": [
+      {
+        "color": "#125E02",
+        "colorCode": "#125E02",
+        "imgURL": [
+          "/logo/765x850-3.jpg",
+          "/image/image2.png",
+          "/image/image3.png"
+        ],
+        "description": "Description for Product 2",
+        "quantity": 29,
+        "detail": "Detail for Product 2",
+        "moreInformation": "More Information for Product 2",
+        "offer": 41,
+        "sizes": [
+          {
+            "size": "XS",
+            "oldPrice": 95,
+            "newPrice": 32
+          },
+          {
+            "size": "S",
+            "oldPrice": 22,
+            "newPrice": 46
+          },
+          {
+            "size": "M",
+            "oldPrice": 48,
+            "newPrice": 13
+          }
+        ]
+      }
+    ]
+  },{
+    "id": "uttlabmhy",
+    "productName": "Product 1",
+    "rating": 2,
+    "productdetails": [
+      {
+        "color": "#4BF740",
+        "colorCode": "#4BF740",
+        "imgURL": [
+          "/logo/765x850-1.jpg",
+          "/image/image2.png",
+          "/image/image3.png"
+        ],
+        "description": "Description for Product 1",
+        "quantity": 36,
+        "detail": "Detail for Product 1",
+        "moreInformation": "More Information for Product 1",
+        "offer": 49,
+        "sizes": [
+          {
+            "size": "XS",
+            "oldPrice": 88,
+            "newPrice": 47
+          },
+          {
+            "size": "S",
+            "oldPrice": 54,
+            "newPrice": 71
+          },
+          {
+            "size": "M",
+            "oldPrice": 69,
+            "newPrice": 65
+          }
+        ]
+      },
+      {
+        "color": "#8B87B4",
+        "colorCode": "#8B87B4",
+        "imgURL": [
+          "/logo/765x850-2.jpg",
+          "/image/image2.png",
+          "/image/image3.png"
+        ],
+        "description": "Description for Product 1",
+        "quantity": 25,
+        "detail": "Detail for Product 1",
+        "moreInformation": "More Information for Product 1",
+        "offer": 27,
+        "sizes": [
+          {
+            "size": "XS",
+            "oldPrice": 62,
+            "newPrice": 98
+          },
+          {
+            "size": "S",
+            "oldPrice": 90,
+            "newPrice": 10
+          },
+          {
+            "size": "M",
+            "oldPrice": 35,
+            "newPrice": 70
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0dmt5tp3j",
+    "productName": "Product 3",
+    "rating": 2,
+    "productdetails": [
+      {
+        "color": "#70A564",
+        "colorCode": "#70A564",
+        "imgURL": [
+          "/logo/765x850-4.jpg",
+          "/image/image2.png",
+          "/image/image3.png"
+        ],
+        "description": "Description for Product 3",
+        "quantity": 43,
+        "detail": "Detail for Product 3",
+        "moreInformation": "More Information for Product 3",
+        "offer": 0,
+        "sizes": [
+          {
+            "size": "XS",
+            "oldPrice": 14,
+            "newPrice": 98
+          },
+          {
+            "size": "S",
+            "oldPrice": 89,
+            "newPrice": 81
+          },
+          {
+            "size": "M",
+            "oldPrice": 14,
+            "newPrice": 52
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "o60mjtpwp",
+    "productName": "Product 4",
+    "rating": 1,
+    "productdetails": [
+      {
+        "color": "#B2007C",
+        "colorCode": "#B2007C",
+        "imgURL": [
+          "/logo/765x850-1.jpg",
+          "/image/image2.png",
+          "/image/image3.png"
+        ],
+        "description": "Description for Product 4",
+        "quantity": 80,
+        "detail": "Detail for Product 4",
+        "moreInformation": "More Information for Product 4",
+        "offer": 50,
+        "sizes": [
+          {
+            "size": "XS",
+            "oldPrice": 23,
+            "newPrice": 75
+          },
+          {
+            "size": "S",
+            "oldPrice": 51,
+            "newPrice": 27
+          },
+          {
+            "size": "M",
+            "oldPrice": 33,
+            "newPrice": 59
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mtd0jr4gs",
+    "productName": "Product 5",
+    "rating": 4,
+    "productdetails": [
+      {
+        "color": "#46A6F7",
+        "colorCode": "#46A6F7",
+        "imgURL": [
+          "/logo/765x850-2.jpg",
+          "/image/image2.png",
+          "/image/image3.png"
+        ],
+        "description": "Description for Product 5",
+        "quantity": 20,
+        "detail": "Detail for Product 5",
+        "moreInformation": "More Information for Product 5",
+        "offer": 33,
+        "sizes": [
+          {
+            "size": "XS",
+            "oldPrice": 61,
+            "newPrice": 97
+          },
+          {
+            "size": "S",
+            "oldPrice": 80,
+            "newPrice": 71
+          },
+          {
+            "size": "M",
+            "oldPrice": 74,
+            "newPrice": 66
+          }
+        ]
+      },
+      {
+        "color": "#DC3F45",
+        "colorCode": "#DC3F45",
+        "imgURL": [
+          "/logo/765x850-3.jpg",
+          "/image/image2.png",
+          "/image/image3.png"
+        ],
+        "description": "Description for Product 5",
+        "quantity": 28,
+        "detail": "Detail for Product 5",
+        "moreInformation": "More Information for Product 5",
+        "offer": 43,
+        "sizes": [
+          {
+            "size": "XS",
+            "oldPrice": 26,
+            "newPrice": 73
+          },
+          {
+            "size": "S",
+            "oldPrice": 71,
+            "newPrice": 64
+          },
+          {
+            "size": "M",
+            "oldPrice": 73,
+            "newPrice": 82
+          }
+        ]
+      }
+    ]
+  },{
+    "id": "uttlabmhy",
+    "productName": "Product 1",
+    "rating": 2,
+    "productdetails": [
+      {
+        "color": "#4BF740",
+        "colorCode": "#4BF740",
+        "imgURL": [
+          "/logo/765x850-1.jpg",
+          "/image/image2.png",
+          "/image/image3.png"
+        ],
+        "description": "Description for Product 1",
+        "quantity": 36,
+        "detail": "Detail for Product 1",
+        "moreInformation": "More Information for Product 1",
+        "offer": 49,
+        "sizes": [
+          {
+            "size": "XS",
+            "oldPrice": 88,
+            "newPrice": 47
+          },
+          {
+            "size": "S",
+            "oldPrice": 54,
+            "newPrice": 71
+          },
+          {
+            "size": "M",
+            "oldPrice": 69,
+            "newPrice": 65
+          }
+        ]
+      },
+      {
+        "color": "#8B87B4",
+        "colorCode": "#8B87B4",
+        "imgURL": [
+          "/logo/765x850-2.jpg",
+          "/image/image2.png",
+          "/image/image3.png"
+        ],
+        "description": "Description for Product 1",
+        "quantity": 25,
+        "detail": "Detail for Product 1",
+        "moreInformation": "More Information for Product 1",
+        "offer": 27,
+        "sizes": [
+          {
+            "size": "XS",
+            "oldPrice": 62,
+            "newPrice": 98
+          },
+          {
+            "size": "S",
+            "oldPrice": 90,
+            "newPrice": 10
+          },
+          {
+            "size": "M",
+            "oldPrice": 35,
+            "newPrice": 70
+          }
+        ]
+      }
+    ]
+  },{
+    "id": "o60mjtpwp",
+    "productName": "Product 4",
+    "rating": 1,
+    "productdetails": [
+      {
+        "color": "#B2007C",
+        "colorCode": "#B2007C",
+        "imgURL": [
+          "/logo/765x850-1.jpg",
+          "/image/image2.png",
+          "/image/image3.png"
+        ],
+        "description": "Description for Product 4",
+        "quantity": 80,
+        "detail": "Detail for Product 4",
+        "moreInformation": "More Information for Product 4",
+        "offer": 50,
+        "sizes": [
+          {
+            "size": "XS",
+            "oldPrice": 23,
+            "newPrice": 75
+          },
+          {
+            "size": "S",
+            "oldPrice": 51,
+            "newPrice": 27
+          },
+          {
+            "size": "M",
+            "oldPrice": 33,
+            "newPrice": 59
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,3 +1,9 @@
+@media (min-width: 1280px) {
+  .container_custom {
+    max-width: 1380px !important;
+  }
+}
+
 .dropdown::after {
   content: url("../../public/chevron-down-solid.svg");
   display: block;
@@ -27,16 +33,10 @@
   left: 4px;
   right: auto;
 }
-
-.fade-in {
-  opacity: 0; /* Make the element transparent initially */
-  animation: fadeInAnimation 1s ease-in forwards; /* Apply animation */
+.shadow_effect_parentElement li:first-child {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 0px 2px;
 }
-@keyframes fadeInAnimation {
-  from {
-    opacity: 0; /* Start the animation with opacity 0 */
-  }
-  to {
-    opacity: 1; /* End the animation with opacity 1 */
-  }
+
+.bg_parentElement li:first-child {
+  background-color: rgb(148, 148, 155);
 }
