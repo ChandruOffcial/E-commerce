@@ -40,3 +40,9 @@
 .bg_parentElement li:first-child {
   background-color: rgb(148, 148, 155);
 }
+
+@media (min-width: 798px) {
+  .container__tesimonial {
+    width: 950px !important;
+  }
+}

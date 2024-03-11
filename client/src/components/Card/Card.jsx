@@ -136,7 +136,7 @@ const Card = ({ data }) => {
     }
 
 
-    console.log(data)
+
 
 
 

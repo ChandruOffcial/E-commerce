@@ -1,4 +1,5 @@
 import Banner from "../../components/Banner/Banner"
+import ClientReview from "../../components/ClientReview/ClientReview"
 import NewArrival from "../../components/NewArrival/NewArrival"
 import Services from "../../components/Services/Services"
 import SupperOffer from "../../components/SuperOffer/SupperOffer"
@@ -14,7 +15,7 @@ const Home = () => {
             <Services />
             <SupperOffer />
             <NewArrival />
-
+            <ClientReview />
         </>
     )
 }

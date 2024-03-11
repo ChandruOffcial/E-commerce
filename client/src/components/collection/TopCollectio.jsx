@@ -23,7 +23,7 @@ const TopCollectio = () => {
                     ))
                 }
             </div>
-            <p className="text-center underline underline-offset-8 font-semibold my-2  md:my-10">Shop all Collection</p>
+            <p className="text-center underline underline-offset-8 font-semibold my-2  md:my-10 cursor-pointer">Shop all Collection</p>
 
             <div className="flex flex-col md:flex-row gap-2 md:gap-3 m-2 mt-4">
                 <div className="w-full  relative hover:cursor-pointer">
