@@ -6,7 +6,7 @@ import { useState } from "react";
 import { IoSearchOutline } from "react-icons/io5";
 import { FaFacebookF } from "react-icons/fa6";
 import "../../components.css"
-
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -199,7 +199,7 @@ const Navbar = () => {
 
                         <div>
                             <ul className="flex space-x-14">
-                                <li className="font-semibold uppercase cursor-pointer hover:underline underline-offset-2 duration-200">Home</li>
+                                <Link to="/"><li className="font-semibold uppercase cursor-pointer hover:underline underline-offset-2 duration-200">Home</li></Link>
                                 <li className="font-semibold uppercase cursor-pointer hover:underline underline-offset-2 duration-200">About</li>
                                 <li className="font-semibold uppercase cursor-pointer hover:underline underline-offset-2 duration-200">Products</li>
                                 <li className="font-semibold uppercase cursor-pointer hover:underline underline-offset-2 duration-200">Contact</li>

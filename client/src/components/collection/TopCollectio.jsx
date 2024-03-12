@@ -10,18 +10,22 @@ const TopCollectio = () => {
                 setProduct(data)
             })
     }, [])
+
+    const limitProduct = product.slice(0, 8);
     return (
         <div className="container container_custom mx-auto bg-white py-4 md:py-8 lg:py-8">
             <h2 className="text-center font-bold text-[#555] text-xl md:text-4xl mb-2 md:mb-4 ">Our Top Collection</h2>
             <p className="text-center font-normal text-[#777] text-base mb-2">Browse The Collection of Top Products</p>
             <p className="text-center font-medium underline decoration-2 underline-offset-8 text-blue-600 mb-3">All Product</p>
             {/* Products Sections */}
-            <div className="grid  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-1  items-center justify-items-center lg:gap-y-6 gap-y-3">
-                {
-                    product.map((data, i) => (
-                        <Card key={i} data={data} />
-                    ))
-                }
+            <div className="flex justify-center items-center">
+                <div className="grid  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-1 gap-x-4  items-center justify-items-center  ">
+                    {
+                        limitProduct.map((data, i) => (
+                            <Card key={i} data={data} custom={"md:w-80"} />
+                        ))
+                    }
+                </div>
             </div>
             <p className="text-center underline underline-offset-8 font-semibold my-2  md:my-10 cursor-pointer">Shop all Collection</p>
 
