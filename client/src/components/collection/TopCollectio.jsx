@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import Card from "../Card/Card"
+import { Link } from "react-router-dom"
 
 const TopCollectio = () => {
     const [product, setProduct] = useState([])
@@ -16,7 +17,8 @@ const TopCollectio = () => {
         <div className="container container_custom mx-auto bg-white py-4 md:py-8 lg:py-8">
             <h2 className="text-center font-bold text-[#555] text-xl md:text-4xl mb-2 md:mb-4 ">Our Top Collection</h2>
             <p className="text-center font-normal text-[#777] text-base mb-2">Browse The Collection of Top Products</p>
-            <p className="text-center font-medium underline decoration-2 underline-offset-8 text-blue-600 mb-3">All Product</p>
+            <Link to="/products">
+                <p className="text-center font-medium underline decoration-2 underline-offset-8 text-blue-600 mb-3 cursor-pointer">All Product</p></Link>
             {/* Products Sections */}
             <div className="flex justify-center items-center">
                 <div className="grid  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-1 gap-x-4  items-center justify-items-center  ">
@@ -27,7 +29,9 @@ const TopCollectio = () => {
                     }
                 </div>
             </div>
-            <p className="text-center underline underline-offset-8 font-semibold my-2  md:my-10 cursor-pointer">Shop all Collection</p>
+            <Link to="/products">
+                <p className="text-center underline underline-offset-8 font-semibold my-2  md:my-10 cursor-pointer">Shop all Collection</p>
+            </Link>
 
             <div className="flex flex-col md:flex-row gap-2 md:gap-3 m-2 mt-4">
                 <div className="w-full  relative hover:cursor-pointer">
